@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияОтступ" id="44">
+			<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="46"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияДатаЗаписи" id="18">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата записи</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияДатаЗаписиКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ДекорацияДатаЗаписиРасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<InputField name="ДатаЗаписи" id="47">
+			<DataPath>Объект.ДатаЗаписи</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="49"/>
+			<Events>
+				<Event name="OnChange">ДатаЗаписиПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="ДекорацияУслуга" id="24">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуга</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияУслугаКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ДекорацияУслугаРасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<InputField name="Услуга" id="50">
+			<DataPath>Объект.Услуга</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Height>1</Height>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УслугаКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="52"/>
+			<Events>
+				<Event name="OnChange">УслугаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="ДекорацияСотрудник" id="30">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияСотрудникКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ДекорацияСотрудникРасширеннаяПодсказка" id="32"/>
+		</LabelDecoration>
+		<InputField name="Сотрудник" id="53">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<LabelDecoration name="ДекорацияСтоимостьУслуги" id="36">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость услуги</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ДекорацияСтоимостьУслугиКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ДекорацияСтоимостьУслугиРасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<InputField name="Стоимость" id="62">
+			<DataPath>Объект.Стоимость</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="14" kind="StyleItem" scale="100"/>
+			<ContextMenu name="СтоимостьКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="СтоимостьРасширеннаяПодсказка" id="64"/>
+		</InputField>
+		<Button name="Записаться" id="42">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.Записаться</CommandName>
+			<TextColor>#FFFFFF</TextColor>
+			<BackColor>style:NavigationColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Shape>Oval</Shape>
+			<ExtendedTooltip name="ЗаписатьсяРасширеннаяПодсказка" id="43"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаписьКлиента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записаться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записаться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записаться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записаться</Action>
+		</Command>
+	</Commands>
+</Form>
